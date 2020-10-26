@@ -1,1 +1,3 @@
-console.log('hello');
+import './style.css';
+
+console.log('hello. Practice makes perfect.');

@@ -20,10 +20,12 @@
   "homepage": "https://github.com/blackpintz/RPG-game#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
+    "file-loader": "^6.1.1",
     "html-webpack-plugin": "^4.5.0",
     "style-loader": "^2.0.0",
     "stylelint": "^13.3.3",

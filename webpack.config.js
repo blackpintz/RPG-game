@@ -3,7 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    phaser: './src/phaser.js',
+    app: './src/index.js',
+  },
   plugins: [new HtmlWebpackPlugin({
     template: 'index.html',
   }),

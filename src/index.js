@@ -1,5 +1,4 @@
 import './style.css';
-import 'phaser';
 
 import { SimpleScene } from './scenes/test';
 

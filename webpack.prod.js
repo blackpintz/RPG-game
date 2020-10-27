@@ -6,7 +6,7 @@ const common = require('./webpack.config');
 module.exports = merge(common, {
   mode: 'production',
   output: {
-    filename: 'main.[contenthash].js',
+    filename: '[name].[contenthash].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [new CleanWebpackPlugin()],

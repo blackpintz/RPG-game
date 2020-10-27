@@ -1,10 +1,12 @@
 import './style.css';
-import afro from '../assets/afro.jpg';
+import 'phaser';
 
-const content = document.getElementById('content');
+import { SimpleScene } from './scenes/test';
 
-const afroImg = document.createElement('img');
-afroImg.src = afro;
+const gameConfig = {
+  width: 1300,
+  height: 600,
+  scene: SimpleScene,
+};
 
-content.appendChild(afroImg);
-console.log('image displaying');
+new Phaser.Game(gameConfig);

@@ -40,6 +40,7 @@
     "webpack-merge": "^5.2.0"
   },
   "dependencies": {
-    "phaser": "^3.24.1"
+    "phaser": "^3.24.1",
+    "phaser-matter-collision-plugin": "^0.10.2"
   }
 }

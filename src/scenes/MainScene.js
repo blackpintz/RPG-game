@@ -12,16 +12,26 @@ export default class MainScene extends Phaser.Scene {
     this.load.atlas('resources', resourceImg, resourceJSON);
   }
 
+  addResources() {
+    const resources = this.map.getObjectLayer('Resources');
+    resources.objects.forEach(resource => {
+      const resourceItem = new Phaser.Physics.Matter.Sprite(this.matter.world, resource.x, resource.y, 'resources', resource.type);
+      resourceItem.setStatic(true);
+      this.add.existing(resourceItem);
+    });
+  }
+
   create() {
     const map = this.make.tilemap({ key: 'map' });
+    this.map = map;
     const tileset = map.addTilesetImage('RPG Nature Tileset', 'tiles', 32, 32, 0, 0);
     const layer1 = map.createStaticLayer('Tile Layer 1', tileset, 0, 0);
     const layer2 = map.createStaticLayer('Tile Layer 2', tileset, 0, 0);
     layer1.setCollisionByProperty({ collides: true });
     this.matter.world.convertTilemapLayer(layer1);
-    const tree = new Phaser.Physics.Matter.Sprite(this.matter.world, 100, 200, 'resources', 'tree');
-    this.add.existing(tree);
-    tree.setStatic(true);
+
+    this.addResources();
+
     this.player = new Player({
       scene: this, x: 50, y: 50, texture: 'female', frame: 'townsfolk_f_idle_1',
     });

@@ -5,7 +5,7 @@ import MainScene from './scenes/MainScene';
 
 const gameConfig = {
   width: 640,
-  height: 640,
+  height: 320,
   backgroundColor: '#999999',
   type: Phaser.AUTO,
   parent: 'content',

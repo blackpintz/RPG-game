@@ -22,7 +22,7 @@ export default class MainScene extends Phaser.Scene {
     this.map.getObjectLayer('Resources').objects.forEach(resource => new Resource({ scene: this, resource }));
 
     this.player = new Player({
-      scene: this, x: 50, y: 50, texture: 'female', frame: 'townsfolk_f_idle_1',
+      scene: this, x: 200, y: 200, texture: 'female', frame: 'townsfolk_f_idle_1',
     });
     this.player.inputKeys = this.input.keyboard.addKeys({
       up: Phaser.Input.Keyboard.KeyCodes.UP,

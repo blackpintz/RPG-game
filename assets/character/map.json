@@ -70,25 +70,13 @@
                  "gid":23,
                  "height":32,
                  "id":3,
-                 "name":"rock",
+                 "name":"",
                  "rotation":0,
                  "type":"rock",
                  "visible":true,
                  "width":32,
                  "x":349.587044534413,
                  "y":250.655870445344
-                }, 
-                {
-                 "gid":21,
-                 "height":32,
-                 "id":5,
-                 "name":"",
-                 "rotation":0,
-                 "type":"tree",
-                 "visible":true,
-                 "width":32,
-                 "x":97.9271255060729,
-                 "y":264.259109311741
                 }, 
                 {
                  "gid":21,
@@ -101,18 +89,6 @@
                  "width":32,
                  "x":35.0121457489878,
                  "y":191.141700404858
-                }, 
-                {
-                 "gid":21,
-                 "height":32,
-                 "id":7,
-                 "name":"",
-                 "rotation":0,
-                 "type":"tree",
-                 "visible":true,
-                 "width":32,
-                 "x":218.655870445344,
-                 "y":75.5141700404858
                 }, 
                 {
                  "gid":21,
@@ -137,18 +113,6 @@
                  "width":32,
                  "x":563.838056680162,
                  "y":271.060728744939
-                }, 
-                {
-                 "gid":21,
-                 "height":32,
-                 "id":11,
-                 "name":"",
-                 "rotation":0,
-                 "type":"tree",
-                 "visible":true,
-                 "width":32,
-                 "x":354.688259109312,
-                 "y":157.133603238866
                 }, 
                 {
                  "gid":22,
@@ -201,18 +165,6 @@
                 {
                  "gid":22,
                  "height":32,
-                 "id":16,
-                 "name":"",
-                 "rotation":0,
-                 "type":"bush",
-                 "visible":true,
-                 "width":32,
-                 "x":244.161943319838,
-                 "y":252.356275303644
-                }, 
-                {
-                 "gid":22,
-                 "height":32,
                  "id":17,
                  "name":"",
                  "rotation":0,
@@ -245,42 +197,6 @@
                  "width":32,
                  "x":449.910931174089,
                  "y":70.412955465587
-                }, 
-                {
-                 "gid":23,
-                 "height":32,
-                 "id":20,
-                 "name":"",
-                 "rotation":0,
-                 "type":"rock",
-                 "visible":true,
-                 "width":32,
-                 "x":23.1093117408907,
-                 "y":265.95951417004
-                }, 
-                {
-                 "gid":23,
-                 "height":32,
-                 "id":21,
-                 "name":"",
-                 "rotation":0,
-                 "type":"rock",
-                 "visible":true,
-                 "width":32,
-                 "x":19.7085020242915,
-                 "y":80.6153846153846
-                }, 
-                {
-                 "gid":23,
-                 "height":32,
-                 "id":22,
-                 "name":"",
-                 "rotation":0,
-                 "type":"rock",
-                 "visible":true,
-                 "width":32,
-                 "x":114.931174089069,
-                 "y":129.927125506073
                 }, 
                 {
                  "gid":23,
@@ -329,6 +245,30 @@
                  "width":32,
                  "x":489.02024291498,
                  "y":254.056680161943
+                }, 
+                {
+                 "gid":23,
+                 "height":32,
+                 "id":27,
+                 "name":"",
+                 "rotation":0,
+                 "type":"rock",
+                 "visible":true,
+                 "width":32,
+                 "x":137.036437246964,
+                 "y":231.951417004049
+                }, 
+                {
+                 "gid":21,
+                 "height":32,
+                 "id":28,
+                 "name":"",
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":32,
+                 "x":358.089068825911,
+                 "y":165.635627530364
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -337,7 +277,7 @@
          "y":0
         }],
  "nextlayerid":4,
- "nextobjectid":27,
+ "nextobjectid":29,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.2",

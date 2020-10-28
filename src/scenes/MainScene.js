@@ -1,24 +1,14 @@
 import Player from '../Player';
 import gameMap from '../../assets/character/map.json';
 import rpgImage from '../../assets/character/RPG Nature Tileset.png';
-import resourceImg from '../../assets/character/resources.png';
-import resourceJSON from '../../assets/character/resources_atlas.json';
+import Resource from '../Resource';
 
 export default class MainScene extends Phaser.Scene {
   preload() {
     Player.preload(this);
+    Resource.preload(this);
     this.load.image('tiles', rpgImage);
     this.load.tilemapTiledJSON('map', gameMap);
-    this.load.atlas('resources', resourceImg, resourceJSON);
-  }
-
-  addResources() {
-    const resources = this.map.getObjectLayer('Resources');
-    resources.objects.forEach(resource => {
-      const resourceItem = new Phaser.Physics.Matter.Sprite(this.matter.world, resource.x, resource.y, 'resources', resource.type);
-      resourceItem.setStatic(true);
-      this.add.existing(resourceItem);
-    });
   }
 
   create() {
@@ -29,8 +19,7 @@ export default class MainScene extends Phaser.Scene {
     const layer2 = map.createStaticLayer('Tile Layer 2', tileset, 0, 0);
     layer1.setCollisionByProperty({ collides: true });
     this.matter.world.convertTilemapLayer(layer1);
-
-    this.addResources();
+    this.map.getObjectLayer('Resources').objects.forEach(resource => new Resource({ scene: this, resource }));
 
     this.player = new Player({
       scene: this, x: 50, y: 50, texture: 'female', frame: 'townsfolk_f_idle_1',

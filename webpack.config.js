@@ -21,7 +21,7 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|wav)$/i,
         use: [
           {
             loader: 'file-loader',
@@ -39,6 +39,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env'],
+            plugins: ["@babel/plugin-proposal-class-properties"]
           },
         },
       },

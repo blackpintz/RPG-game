@@ -579,9 +579,89 @@
          "visible":true,
          "x":0,
          "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":4,
+         "name":"Enemies",
+         "objects":[
+                {
+                 "gid":3,
+                 "height":32,
+                 "id":29,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"drops",
+                         "type":"string",
+                         "value":"[241, 280]"
+                        }, 
+                        {
+                         "name":"health",
+                         "type":"int",
+                         "value":9
+                        }],
+                 "rotation":0,
+                 "type":"bear",
+                 "visible":true,
+                 "width":32,
+                 "x":436.307692307692,
+                 "y":99.3198380566802
+                }, 
+                {
+                 "gid":3,
+                 "height":32,
+                 "id":34,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"drops",
+                         "type":"string",
+                         "value":"[201, 203]"
+                        }, 
+                        {
+                         "name":"health",
+                         "type":"int",
+                         "value":8
+                        }],
+                 "rotation":0,
+                 "type":"ent",
+                 "visible":true,
+                 "width":32,
+                 "x":458.412955465587,
+                 "y":247.255060728745
+                }, 
+                {
+                 "gid":5,
+                 "height":32,
+                 "id":35,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"drops",
+                         "type":"string",
+                         "value":"[243]"
+                        }, 
+                        {
+                         "name":"health",
+                         "type":"int",
+                         "value":5
+                        }],
+                 "rotation":0,
+                 "type":"wolf",
+                 "visible":true,
+                 "width":32,
+                 "x":247.562753036437,
+                 "y":160.534412955466
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
         }],
- "nextlayerid":4,
- "nextobjectid":29,
+ "nextlayerid":5,
+ "nextobjectid":42,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.2",

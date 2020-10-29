@@ -2,16 +2,16 @@ import playerImg from '../assets/character/female.png';
 import playerJSON from '../assets/character/female_atlas.json';
 import jsonData from '../assets/character/female_anim.json';
 import itemPack from '../assets/character/items.png';
+import MatterEntity from './MatterEntity';
+import playerSound from '../assets/audio/player.wav';
 
-export default class Player extends Phaser.Physics.Matter.Sprite {
+export default class Player extends MatterEntity {
   constructor(data) {
     const {
       scene, x, y, texture, frame,
     } = data;
-    super(scene.matter.world, x, y, texture, frame);
+    super({ ...data, health: 2, drops: [] });
     this.touching = [];
-    this.scene.add.existing(this);
-
     this.spriteWeapon = new Phaser.GameObjects.Sprite(this.scene, 0, 0, 'items', 162);
     this.spriteWeapon.setScale(0.8);
     this.spriteWeapon.setOrigin(0.25, 0.75);
@@ -34,11 +34,9 @@ export default class Player extends Phaser.Physics.Matter.Sprite {
     scene.load.atlas('female', playerImg, playerJSON);
     scene.load.animation('female_anims', jsonData);
     scene.load.spritesheet('items', itemPack, { frameWidth: 32, frameHeight: 32 });
+    scene.load.audio('player', playerSound);
   }
 
-  get velocity() {
-    return this.body.velocity;
-  }
 
   weaponRotate() {
     const pointer = this.scene.input.activePointer;

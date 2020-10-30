@@ -24,8 +24,9 @@ export default class Enemy extends MatterEntity {
     });
 
     const { Body, Bodies } = Phaser.Physics.Matter.Matter;
-    const enemyCollider = Bodies.circle(this.x, this.y, 12, { isSensor: false, label: 'enemyCollider' });
+    const enemyCollider = Bodies.circle(this.x, this.y, 12, { isSensor: false, label: 'enemyCollider', color: '#fff' });
     const enemySensor = Bodies.circle(this.x, this.y, 80, { isSensor: true, label: 'enemySensor' });
+    console.log(Bodies.circle);
     const compoundBody = Body.create({
       parts: [enemyCollider, enemySensor],
       frictionAir: 0.35,
@@ -41,7 +42,7 @@ export default class Enemy extends MatterEntity {
 
     attack = (target) => {
       if (target.dead || this.dead) {
-        clearInterval(this.attacktimer);
+        clearInterval(this.attackTimer);
         return;
       }
       target.hit();
@@ -55,13 +56,19 @@ export default class Enemy extends MatterEntity {
           const v = direction.normalize();
           this.setVelocityX(direction.x);
           this.setVelocityY(direction.y);
-          if (this.attacktimer) {
-            clearInterval(this.attacktimer);
-            this.attacktimer = null;
+          if (this.attackTimer) {
+            clearInterval(this.attackTimer);
+            this.attackTimer = null;
           }
-        } else if (this.attacktimer == null) {
-          this.attacktimer = setInterval(this.attack, 500, this.attacking);
+        } else if (this.attackTimer == null) {
+          this.attackTimer = setInterval(this.attack, 500, this.attacking);
         }
+      }
+      this.setFlipX(this.velocity.x < 0);
+      if (Math.abs(this.velocity.x) > 0.1 || Math.abs(this.velocity.y) > 0.1) {
+        this.anims.play(`${this.name}_walk`, true);
+      } else {
+        this.anims.play(`${this.name}_idle`, true);
       }
     }
 }

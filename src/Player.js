@@ -10,7 +10,9 @@ export default class Player extends MatterEntity {
     const {
       scene, x, y, texture, frame,
     } = data;
-    super({ ...data, health: 2, drops: [] });
+    super({
+      ...data, health: 5, drops: [], name: 'player',
+    });
     this.touching = [];
     this.spriteWeapon = new Phaser.GameObjects.Sprite(this.scene, 0, 0, 'items', 162);
     this.spriteWeapon.setScale(0.8);
@@ -63,6 +65,7 @@ export default class Player extends MatterEntity {
         if (other.bodyB.isSensor) return;
         this.touching.push(other.gameObjectB);
       },
+      context: this.scene,
     });
 
     this.scene.matterCollision.addOnCollideEnd({
@@ -70,6 +73,7 @@ export default class Player extends MatterEntity {
       callback: other => {
         this.touching = this.touching.filter(gameObject => gameObject !== other.gameObjectB);
       },
+      context: this.scene,
     });
   }
 
@@ -86,6 +90,7 @@ export default class Player extends MatterEntity {
       callback: other => {
         if (other.gameObjectB && other.gameObjectB.pickup) other.gameObjectB.pickup();
       },
+      context: this.scene,
     });
   }
 

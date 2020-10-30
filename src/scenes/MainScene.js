@@ -9,6 +9,7 @@ export default class MainScene extends Phaser.Scene {
     super('MainScene');
     this.enemies = [];
   }
+
   preload() {
     Player.preload(this);
     Enemy.preload(this);
@@ -29,7 +30,7 @@ export default class MainScene extends Phaser.Scene {
     this.map.getObjectLayer('Enemies').objects.forEach(enemy => this.enemies.push(new Enemy({ scene: this, enemy })));
 
     this.player = new Player({
-      scene: this, x: 200, y: 200, texture: 'female', frame: 'townsfolk_f_idle_1',
+      scene: this, x: 100, y: 100, texture: 'female', frame: 'townsfolk_f_idle_1',
     });
     this.player.inputKeys = this.input.keyboard.addKeys({
       up: Phaser.Input.Keyboard.KeyCodes.UP,

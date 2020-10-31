@@ -59,6 +59,11 @@
                          "value":"[272,272]"
                         }, 
                         {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
                          "name":"yOrigin",
                          "type":"float",
                          "value":0.8
@@ -85,6 +90,11 @@
                          "name":"drops",
                          "type":"string",
                          "value":"[228,228]"
+                        }, 
+                        {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
                         }, 
                         {
                          "name":"yOrigin",
@@ -115,6 +125,11 @@
                          "value":"[273,273]"
                         }, 
                         {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
                          "name":"yOrigin",
                          "type":"float",
                          "value":0.6
@@ -141,6 +156,11 @@
                          "name":"drops",
                          "type":"string",
                          "value":"[272,272]"
+                        }, 
+                        {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
                         }, 
                         {
                          "name":"yOrigin",
@@ -171,6 +191,11 @@
                          "value":"[272,272]"
                         }, 
                         {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
                          "name":"yOrigin",
                          "type":"float",
                          "value":0.8
@@ -197,6 +222,11 @@
                          "name":"drops",
                          "type":"string",
                          "value":"[272,272]"
+                        }, 
+                        {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
                         }, 
                         {
                          "name":"yOrigin",
@@ -227,6 +257,11 @@
                          "value":"[228,228]"
                         }, 
                         {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
                          "name":"yOrigin",
                          "type":"float",
                          "value":0.6
@@ -253,6 +288,11 @@
                          "name":"drops",
                          "type":"string",
                          "value":"[228,228]"
+                        }, 
+                        {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
                         }, 
                         {
                          "name":"yOrigin",
@@ -283,6 +323,11 @@
                          "value":"[228,228]"
                         }, 
                         {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
                          "name":"yOrigin",
                          "type":"float",
                          "value":0.6
@@ -309,6 +354,11 @@
                          "name":"drops",
                          "type":"string",
                          "value":"[228,228]"
+                        }, 
+                        {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
                         }, 
                         {
                          "name":"yOrigin",
@@ -339,6 +389,11 @@
                          "value":"[228,228]"
                         }, 
                         {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
                          "name":"yOrigin",
                          "type":"float",
                          "value":0.6
@@ -365,6 +420,11 @@
                          "name":"drops",
                          "type":"string",
                          "value":"[273,273]"
+                        }, 
+                        {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
                         }, 
                         {
                          "name":"yOrigin",
@@ -395,6 +455,11 @@
                          "value":"[273,273]"
                         }, 
                         {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
                          "name":"yOrigin",
                          "type":"float",
                          "value":0.6
@@ -421,6 +486,11 @@
                          "name":"drops",
                          "type":"string",
                          "value":"[273,273]"
+                        }, 
+                        {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
                         }, 
                         {
                          "name":"yOrigin",
@@ -451,6 +521,11 @@
                          "value":"[273,273]"
                         }, 
                         {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
                          "name":"yOrigin",
                          "type":"float",
                          "value":0.6
@@ -477,6 +552,11 @@
                          "name":"drops",
                          "type":"string",
                          "value":"[228,228]"
+                        }, 
+                        {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
                         }, 
                         {
                          "name":"yOrigin",
@@ -507,6 +587,11 @@
                          "value":"[273,273]"
                         }, 
                         {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
                          "name":"yOrigin",
                          "type":"float",
                          "value":0.6
@@ -533,6 +618,11 @@
                          "name":"drops",
                          "type":"string",
                          "value":"[272,272]"
+                        }, 
+                        {
+                         "name":"score",
+                         "type":"int",
+                         "value":0
                         }, 
                         {
                          "name":"yOrigin",
@@ -572,6 +662,11 @@
                          "name":"health",
                          "type":"int",
                          "value":9
+                        }, 
+                        {
+                         "name":"score",
+                         "type":"int",
+                         "value":100
                         }],
                  "rotation":0,
                  "type":"bear",
@@ -595,6 +690,11 @@
                          "name":"health",
                          "type":"int",
                          "value":8
+                        }, 
+                        {
+                         "name":"score",
+                         "type":"int",
+                         "value":100
                         }],
                  "rotation":0,
                  "type":"ent",
@@ -618,6 +718,11 @@
                          "name":"health",
                          "type":"int",
                          "value":5
+                        }, 
+                        {
+                         "name":"score",
+                         "type":"int",
+                         "value":100
                         }],
                  "rotation":0,
                  "type":"wolf",

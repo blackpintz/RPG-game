@@ -19,14 +19,14 @@ export default class Enemy extends MatterEntity {
     const { scene, enemy } = data;
     const drops = JSON.parse(enemy.properties.find(p => p.name == 'drops').value);
     const health = enemy.properties.find(p => p.name == 'health').value;
+    const score = enemy.properties.find(p => p.name == 'score').value;
     super({
-      scene, x: enemy.x, y: enemy.y, texture: 'enemies', frame: `${enemy.name}_idle_1`, drops, health, name: enemy.name,
+      scene, x: enemy.x, y: enemy.y, texture: 'enemies', frame: `${enemy.name}_idle_1`, drops, health, score, name: enemy.name,
     });
 
     const { Body, Bodies } = Phaser.Physics.Matter.Matter;
     const enemyCollider = Bodies.circle(this.x, this.y, 12, { isSensor: false, label: 'enemyCollider', color: '#fff' });
     const enemySensor = Bodies.circle(this.x, this.y, 80, { isSensor: true, label: 'enemySensor' });
-    console.log(Bodies.circle);
     const compoundBody = Body.create({
       parts: [enemyCollider, enemySensor],
       frictionAir: 0.35,

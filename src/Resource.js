@@ -19,8 +19,9 @@ export default class Resource extends MatterEntity {
     const { scene, resource } = data;
     const drops = JSON.parse(resource.properties.find(p => p.name == 'drops').value);
     const depth = JSON.parse(resource.properties.find(p => p.name == 'depth').value);
+    const score = resource.properties.find(p => p.name == 'score').value;
     super({
-      scene, x: resource.x, y: resource.y, texture: 'resources', frame: resource.type, drops, depth, health: 5, name: resource.type,
+      scene, x: resource.x, y: resource.y, texture: 'resources', frame: resource.type, drops, depth, score, health: 5, name: resource.type,
     });
     const yOrigin = resource.properties.find(p => p.name == 'yOrigin').value;
     this.y += this.height * (yOrigin - 0.5);

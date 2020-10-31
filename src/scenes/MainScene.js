@@ -4,6 +4,7 @@ import gameMap from '../../assets/character/map.json';
 import rpgImage from '../../assets/character/RPG Nature Tileset.png';
 import Resource from '../Resource';
 
+
 export default class MainScene extends Phaser.Scene {
   constructor() {
     super('MainScene');
@@ -32,6 +33,9 @@ export default class MainScene extends Phaser.Scene {
     this.player = new Player({
       scene: this, x: 100, y: 100, texture: 'female', frame: 'townsfolk_f_idle_1',
     });
+
+    this.scoreText = this.add.text(250, 10, '', { fontSize: '22px', fill: '#000' });
+
     this.player.inputKeys = this.input.keyboard.addKeys({
       up: Phaser.Input.Keyboard.KeyCodes.UP,
       down: Phaser.Input.Keyboard.KeyCodes.DOWN,
@@ -43,5 +47,6 @@ export default class MainScene extends Phaser.Scene {
   update() {
     this.enemies.forEach(enemy => enemy.update());
     this.player.update();
+    this.scoreText.setText(`Score: ${this.player.totalScore ? this.player.totalScore : 0}`);
   }
 }

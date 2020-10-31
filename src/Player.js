@@ -11,13 +11,15 @@ export default class Player extends MatterEntity {
       scene, x, y, texture, frame,
     } = data;
     super({
-      ...data, health: 5, drops: [], name: 'player',
+      ...data, health: 5, drops: [], score: [], name: 'player',
     });
     this.touching = [];
+    this.totalScore;
     this.spriteWeapon = new Phaser.GameObjects.Sprite(this.scene, 0, 0, 'items', 162);
     this.spriteWeapon.setScale(0.8);
     this.spriteWeapon.setOrigin(0.25, 0.75);
     this.scene.add.existing(this.spriteWeapon);
+
     const { Body, Bodies } = Phaser.Physics.Matter.Matter;
     const playerCollider = Bodies.circle(this.x, this.y, 12, { isSensor: false, label: 'playerCollider' });
     const playerSensor = Bodies.circle(this.x, this.y, 24, { isSensor: true, label: 'playerSensor' });
@@ -98,6 +100,8 @@ export default class Player extends MatterEntity {
     this.touching = this.touching.filter(gameObject => gameObject.hit && !gameObject.dead);
     this.touching.forEach(object => {
       object.hit();
+      this.score.push(object.gameScore());
+      this.totalScore = this.score.reduce((a, b) => a + b, 0);
       if (object.dead) object.destroy();
     });
   }

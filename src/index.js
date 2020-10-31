@@ -2,6 +2,8 @@ import './style.css';
 import PhaserMatterCollisionPlugin from 'phaser-matter-collision-plugin';
 
 import MainScene from './scenes/MainScene';
+import IntroScene from './scenes/IntroScene';
+import MenuScene from './scenes/MenuScene';
 
 const gameConfig = {
   width: 640,
@@ -9,7 +11,10 @@ const gameConfig = {
   backgroundColor: '#999999',
   type: Phaser.AUTO,
   parent: 'content',
-  scene: [MainScene],
+  dom: {
+    createContainer: true,
+  },
+  scene: [IntroScene, MainScene, MenuScene],
   scale: {
     zoom: 2,
   },

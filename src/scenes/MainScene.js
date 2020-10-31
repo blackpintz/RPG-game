@@ -11,6 +11,10 @@ export default class MainScene extends Phaser.Scene {
     this.enemies = [];
   }
 
+  init(data) {
+    this.playerName = data.player;
+  }
+
   preload() {
     Player.preload(this);
     Enemy.preload(this);
@@ -42,11 +46,21 @@ export default class MainScene extends Phaser.Scene {
       left: Phaser.Input.Keyboard.KeyCodes.LEFT,
       right: Phaser.Input.Keyboard.KeyCodes.RIGHT,
     });
+
+    this.gameOver();
   }
+
+  gameOver() {
+    if (this.player.dead) {
+      this.scene.start('MenuScene', { score: this.player.totalScore });
+    }
+  }
+
 
   update() {
     this.enemies.forEach(enemy => enemy.update());
     this.player.update();
     this.scoreText.setText(`Score: ${this.player.totalScore ? this.player.totalScore : 0}`);
+    this.gameOver();
   }
 }

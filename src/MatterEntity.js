@@ -43,4 +43,6 @@ export default class MatterEntity extends Phaser.Physics.Matter.Sprite {
         }));
       }
     }
+
+    gameScore = () => this.score
 }

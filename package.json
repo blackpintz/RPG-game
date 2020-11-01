@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "phaser": "^3.24.1",
-    "phaser-matter-collision-plugin": "^0.10.2"
+    "phaser-matter-collision-plugin": "^0.10.2",
+    "regenerator-runtime": "^0.13.7"
   }
 }

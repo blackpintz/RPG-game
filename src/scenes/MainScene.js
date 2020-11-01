@@ -3,7 +3,7 @@ import Enemy from '../Enemy';
 import gameMap from '../../assets/character/map.json';
 import rpgImage from '../../assets/character/RPG Nature Tileset.png';
 import Resource from '../Resource';
-
+import { sendData } from '../ScoreApi';
 
 export default class MainScene extends Phaser.Scene {
   constructor() {
@@ -52,7 +52,9 @@ export default class MainScene extends Phaser.Scene {
 
   gameOver() {
     if (this.player.dead || this.enemies.every(enemy => enemy.dead)) {
-      this.scene.start('MenuScene', { score: this.player.totalScore ? this.player.totalScore : 0 });
+      const postScore = this.player.totalScore || '0';
+      sendData(this.playerName, postScore);
+      this.scene.start('MenuScene', { score: this.player.totalScore ? this.player.totalScore : 0, player: this.playerName });
     }
   }
 

@@ -41,7 +41,6 @@ export default class Player extends MatterEntity {
     scene.load.audio('player', playerSound);
   }
 
-
   weaponRotate() {
     const pointer = this.scene.input.activePointer;
     if (pointer.isDown) {
@@ -113,7 +112,6 @@ export default class Player extends MatterEntity {
     this.spriteWeapon.destroy();
   }
 
-
   update() {
     if (this.dead) return;
     const speed = 2.5;
@@ -124,7 +122,6 @@ export default class Player extends MatterEntity {
     } else if (this.inputKeys.right.isDown) {
       playerVelocity.x = 1;
     }
-
 
     if (this.inputKeys.up.isDown) {
       playerVelocity.y = -1;

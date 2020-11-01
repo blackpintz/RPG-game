@@ -60,6 +60,10 @@
 
 [Live link](https://admiring-bardeen-d49487.netlify.app/)
 
+## Video Presentation
+
+[Video](https://www.loom.com/share/da18f6320f47404b9a53706fea9ca294)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.

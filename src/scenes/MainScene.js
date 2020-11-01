@@ -51,8 +51,8 @@ export default class MainScene extends Phaser.Scene {
   }
 
   gameOver() {
-    if (this.player.dead) {
-      this.scene.start('MenuScene', { score: this.player.totalScore });
+    if (this.player.dead || this.enemies.every(enemy => enemy.dead)) {
+      this.scene.start('MenuScene', { score: this.player.totalScore ? this.player.totalScore : 0 });
     }
   }
 

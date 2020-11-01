@@ -27,7 +27,7 @@
 
 - The player and enemies are each assigned a health bar. An enemy's health is depleted every time the player hits them with an axe. The player's health is depleted everytime an enemy gets close to them.
 
-- The player score inreases as they axe the enemy. They win the game after they have killed all the enemies in the battle field.
+- The player score increases as they axe the enemy. They win the game after they have killed all the enemies in the battle field.
 
 
 ## Game Instructions
@@ -43,7 +43,7 @@
 
 ## Future Improvements.
 
-- Add a time delay between when the game ends ang when the leaderboard scene displays. The player can see a score but might be able to see if they survived even though they killed all the enemies.
+- Add a time delay between when the game ends and when the leaderboard scene displays. The player can see a score but might not be able to see if they survived even after they killed all the enemies.
 
 
 ## Built With
@@ -72,7 +72,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Clone the project.
 - Cd into the project directory.
-- Run ```npm install``` to install linter packages.
+- Run ```npm install``` to install packages in package.json.
 - Run ```npm run build```
 - Run ```npm test``` to see the tests for all files.
 - Open ```index.html``` file on your localhost and play the game.

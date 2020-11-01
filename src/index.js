@@ -3,7 +3,7 @@ import PhaserMatterCollisionPlugin from 'phaser-matter-collision-plugin';
 
 import MainScene from './scenes/MainScene';
 import IntroScene from './scenes/IntroScene';
-import MenuScene from './scenes/MenuScene';
+import LeaderboardScene from './scenes/LeaderboardScene';
 
 const gameConfig = {
   width: 640,
@@ -14,7 +14,7 @@ const gameConfig = {
   dom: {
     createContainer: true,
   },
-  scene: [IntroScene, MainScene, MenuScene],
+  scene: [IntroScene, MainScene, LeaderboardScene],
   scale: {
     zoom: 2,
   },

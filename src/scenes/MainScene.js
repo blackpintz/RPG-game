@@ -54,7 +54,7 @@ export default class MainScene extends Phaser.Scene {
     if (this.player.dead || this.enemies.every(enemy => enemy.dead)) {
       const postScore = this.player.totalScore || '0';
       sendData(this.playerName, postScore);
-      this.scene.start('MenuScene', { score: this.player.totalScore ? this.player.totalScore : 0, player: this.playerName });
+      this.scene.start('LeaderboardScene', { score: this.player.totalScore ? this.player.totalScore : 0, player: this.playerName });
     }
   }
 

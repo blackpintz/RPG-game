@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack --config webpack.dev.js --watch"
   },
@@ -23,6 +23,7 @@
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.1",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.0",
@@ -32,6 +33,8 @@
     "file-loader": "^6.1.1",
     "html-loader": "^1.3.2",
     "html-webpack-plugin": "^4.5.0",
+    "jest": "^26.6.1",
+    "jest-canvas-mock": "^2.3.0",
     "style-loader": "^2.0.0",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
@@ -45,5 +48,14 @@
     "phaser": "^3.24.1",
     "phaser-matter-collision-plugin": "^0.10.2",
     "regenerator-runtime": "^0.13.7"
+  },
+  "jest": {
+    "setupFiles": [
+      "jest-canvas-mock"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss)$": "<rootDir>/tests/mocks/styleMock.js",
+      "\\.(gif|ttf|eot|svg|png|mp3|wav)$": "<rootDir>/tests/mocks/fileMock.js"
+    }
   }
 }

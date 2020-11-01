@@ -1,8 +1,8 @@
 import { retrieveData } from '../ScoreApi';
 
-export default class MenuScene extends Phaser.Scene {
+export default class LeaderboardScene extends Phaser.Scene {
   constructor() {
-    super('MenuScene');
+    super('LeaderboardScene');
   }
 
   init(data) {

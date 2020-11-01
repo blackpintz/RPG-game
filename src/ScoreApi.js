@@ -32,7 +32,7 @@ export const retrieveData = async () => {
       Accept: 'application/json',
       'Content-Type': 'application/json',
     },
-  }
+  };
 
   const getRequest = await fetch(url, getData);
   const data = await getRequest.json();

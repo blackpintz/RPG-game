@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
     "test": "jest",
     "build": "webpack --config webpack.dev.js",
-    "dev": "webpack --config webpack.dev.js --watch"
+    "start": "webpack --config webpack.dev.js --watch"
   },
   "repository": {
     "type": "git",

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "build": "webpack --config webpack.dev.js",
-    "start": "webpack --config webpack.dev.js"
+    "start": "webpack --config webpack.dev.js",
+    "heroku-postbuild": "webpack --config webpack.dev.js"
   },
   "repository": {
     "type": "git",

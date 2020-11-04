@@ -45,11 +45,13 @@
     "webpack-merge": "^5.2.0"
   },
   "dependencies": {
+    "node-fetch": "^2.6.1",
     "phaser": "^3.24.1",
     "phaser-matter-collision-plugin": "^0.10.2",
     "regenerator-runtime": "^0.13.7"
   },
   "jest": {
+    "automock": false,
     "setupFiles": [
       "jest-canvas-mock"
     ],

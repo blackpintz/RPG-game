@@ -7,7 +7,8 @@ export default class IntroScene extends Phaser.Scene {
   }
 
   create() {
-    this.add.text(200, 40, 'How to play', { fontSize: 30 });
+    this.add.text(200, 10, 'AXE GAME', { fontSize: 40 });
+    this.add.text(200, 45, 'How to play', { fontSize: 30 });
 
     this.add.text(100, 70, '- Use the arrow keys to move the player', { fontSize: 20, color: '#000' });
     this.add.text(100, 85, '  up, down, left and right.', { fontSize: 20, color: '#000' });

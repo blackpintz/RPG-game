@@ -1,5 +1,7 @@
 import 'regenerator-runtime';
 
+const fetch = require('node-fetch');
+
 const apiKey = 'Zl4d7IVkemOTTVg2fUfun';
 const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${apiKey}/scores`;
 

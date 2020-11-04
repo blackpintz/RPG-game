@@ -79,7 +79,7 @@ To get a local copy up and running follow these simple example steps.
 - Run ```npm install``` to install packages in package.json.
 - Run ```npm run build```
 - Run ```npm test``` to see the tests for all files.
-- Open ```index.html``` file on your localhost and play the game.
+- Open ```dist/index.html``` file on your localhost and play the game.
 
 
 

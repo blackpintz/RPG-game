@@ -46,8 +46,6 @@ export default class MainScene extends Phaser.Scene {
       left: Phaser.Input.Keyboard.KeyCodes.LEFT,
       right: Phaser.Input.Keyboard.KeyCodes.RIGHT,
     });
-
-    this.gameOver();
   }
 
   gameOver() {

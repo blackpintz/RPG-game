@@ -58,7 +58,7 @@
 
 ## Live Demo
 
-[Live link](https://admiring-bardeen-d49487.netlify.app/)
+[Live link](https://axe-phaser-game.netlify.app/)
 
 ## Video Presentation
 

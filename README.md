@@ -1,4 +1,4 @@
-## Survival Game.
+## Axe phaser Game.
 
  In this game, the player is trying to protect themselves from the enemies who have invaded their property. The player's life is in danger when the enemy detects them. The player only has the axe on their hand to defend themselves.
 

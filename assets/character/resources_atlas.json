@@ -1,0 +1,47 @@
+{
+    "frames": [
+        {
+            "filename": "tree",
+            "frame": {
+                "w": 32,
+                "h": 64,
+                "x": 1,
+                "y": 1
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "rock",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 34,
+                "y": 1
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bush",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 34,
+                "y": 34
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+    ],
+    "meta": {
+        "description": "Atlas generado con Atlas Packer Gamma V2",
+        "web": "https://gammafp.github.io/atlas-packer-phaser/"
+    }
+}

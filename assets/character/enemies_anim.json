@@ -1,0 +1,148 @@
+{
+    "anims": [
+        {
+            "key": "ent_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "ent_walk_1"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "ent_walk_2"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "ent_walk_3"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "ent_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "ent_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "ent_idle_1"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "ent_idle_2"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "ent_idle_3"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "ent_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "bear_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "bear_walk_1"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "bear_walk_2"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "bear_walk_3"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "bear_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "bear_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "bear_idle_1"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "bear_idle_2"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "bear_idle_3"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "bear_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "wolf_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "wolf_walk_1"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "wolf_walk_2"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "wolf_walk_3"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "wolf_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "wolf_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "wolf_idle_1"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "wolf_idle_2"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "wolf_idle_3"
+                },
+                {
+                    "key": "enemies",
+                    "frame": "wolf_idle_4"
+                }
+            ]
+        }
+    ]
+}

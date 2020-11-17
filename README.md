@@ -58,7 +58,7 @@
 
 ## Live Demo
 
-[Live link](https://axe-phaser-game.netlify.app/)
+[Live link](https://axe-phaser3-game.netlify.app/)
 
 ## Video Presentation
 
